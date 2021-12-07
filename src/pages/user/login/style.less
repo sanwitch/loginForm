@@ -1,0 +1,45 @@
+@import '~antd/es/style/themes/default.less';
+
+.main {
+  clear: both;
+  @media screen and (max-width: @screen-sm) {
+    width: 95%;
+  }
+  .title {
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 500;
+    font-size: 24px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    text-align: center;
+  }
+  .icon {
+    margin-left: 16px;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .other {
+    margin-top: 24px;
+    line-height: 22px;
+    text-align: left;
+
+    .register {
+      float: right;
+    }
+  }
+
+  :global {
+    .antd-pro-login-submit {
+      width: 100%;
+      margin-top: 24px;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@import '~antd/es/style/themes/default.less';
+
+.login {
+  float: right;
+  width: 420px;
+  margin-right: 18.8%;
+  padding: 45px 50px 60px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 10 0 rgba(0, 0, 0, 0.05);
+  :global {
+    .ant-tabs .ant-tabs-bar {
+      margin-bottom: 24px;
+      text-align: center;
+      border-bottom: 0;
+    }
+
+    .ant-form-item {
+      margin: 0 2px 24px;
+    }
+
+    .prefixIcon {
+      color: @disabled-color;
+      font-size: @font-size-base;
+    }
+
+    .ant-input-affix-wrapper:hover .prefixIcon,
+    .ant-input-affix-wrapper-focused .prefixIcon {
+      color: @primary-color;
+    }
+    .ant-legacy-form-item {
+      margin-bottom: 0;
+    }
+    .ant-legacy-form-item-children .ant-legacy-form-item {
+      margin-bottom: 24px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .getCaptcha {
+    display: block;
+    width: 100%;
+  }
+
+  .icon {
+    margin-left: 16px;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .other {
+    margin-top: 24px;
+    line-height: 22px;
+    text-align: left;
+
+    .register {
+      float: right;
+    }
+  }
+
+  .submit {
+    width: 100%;
+    margin-top: 24px;
+  }
+}
